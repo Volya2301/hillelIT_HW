@@ -1,0 +1,92 @@
+'number' + 3 + 3 => 'number33'
+In JS, the "+" with a string and a number results in string concatenation. 
+'number' is a string 
+3 and 3 are concatenated to it as strings.
+
+null + 3 => 3
+in arithmetic operations "null" is converted to 0.
+so, 0+3=3
+
+5 && "qwerty" => qwerty
+5 is truthy(істинне значення), and operator && returns the second operand if the first is truthy.
+
++'40' + +'2' + "hillel" => '42hillel'
++'40' - converts the string to the number 40.
++'2' - converts the string to the number 2.
+40 + 2 → 42
+42 + "hillel" → '42hillel' (string concatenation)
+
+'10' - 5 === 6 => false
+"-" operator converts strings to numbers, 
+10 - 5 = 5
+and 5 is not equal to 6.
+
+true + false = 1
+in arithmetic operations "true" and "false" are converted in 1 and 0.
+
+'4px' - 3 => NaN
+'4px' - cannot be converted to a number.
+
+'4' - 3 => 1
+"-" operator converts the string to a number 4.
+
+'6' + 3 ** 0 => 61
+3 ** 0 - calculated first, any number to the power of 0 is 1
+'6' + 1 → '61' - string concatenation
+
+12 / '6' = 2
+" / " - operator converts the string to a number.
+
+'10' + (5 === 6) => 10false
+5 === 6 → false
+'10' + false → '10false' - string concatenation.
+
+null == '' => false
+null is not equal to an empty string.
+
+3 ** (9 / 3) => 27
+(9 / 3) = 3 - first operation
+3 ** 3 = 27 
+
+!!'false' == !!'true' => true
+!!'false' => true (незалежно від змісту, непорожній рядок завжди істинний)
+!!'true' => true
+true == true => true
+
+0 || '0' && 1 => 
+0 = false
+'0' = true - truthy value
+'0' && 1 → 1 - truthy value
+0 || 1 → 1
+&& has higher precedence than ||
+and the logical OR operator returns the first truthy value.
+
+(+null == false) < 1 => false
++null = 0
+0 == false = true
+true converts to 1.
+1 < 1 → false
+
+false && true || true => true
+false && true = false
+false || true = true
+Logical AND results in false, then logical OR results in true.
+
+
+
+false && (false || true) => false
+false || true = true
+false && true = false
+Logical OR results in true, then logical AND results in false.
+
+(+null == false) < 1 ** 5 => false
++null = 0
+0 == false = true converts to 1.
+1 ** 5 = 1
+1 < 1 = false
+
+
+
+
+
+
