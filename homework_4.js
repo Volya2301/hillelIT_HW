@@ -2,7 +2,7 @@ let checkProbabilityTheory = function (count){
     let genNumbers = [];
     let numb = 1
     while (numb <= count){
-        let randomNum = Math.floor(Math.random() * 1001) + 100
+        let randomNum = Math.floor(Math.random() * 901) + 100
         genNumbers.push(randomNum)
         numb++
     }
