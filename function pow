@@ -1,9 +1,0 @@
-function pow (x, y) {
-    let resNumber = 1
-    for (let i = 0; i < y; i++) {
-        resNumber = resNumber * x;
-    }
-    return resNumber
-}
-console.log (pow (3,8))
-//console.log(3**8)
