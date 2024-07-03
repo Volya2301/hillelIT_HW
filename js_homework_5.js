@@ -2,15 +2,16 @@ let dragonInfo = {
     name: "Ansur",
     size: "huge",
     type: "Undead",
-    getInfo: function(){
-        let info = "";
+    getInfo: function() {
+        let info = {};
         for (let element in this) {
             if (element !== 'getInfo') {
-                info += element + ': ' + this[element] + '\n';
+                info[element] = this[element];
             }
         }
         return info;
     }
 };
-//dragonInfo.homeTown = "Baldur\'s Gate"
+
+//dragonInfo.homeTown = "Baldur's Gate"
 console.log(dragonInfo.getInfo());
