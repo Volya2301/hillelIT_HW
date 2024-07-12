@@ -1,4 +1,4 @@
-var arr = [
+let usersArr = [
     {
         userName:"Test",
         lastName:"Test",
@@ -14,25 +14,20 @@ var arr = [
         lastName:"",
         email:"andrii@mail.ru" // Нам такі не підходять
     },
+    {
+        userName:"Neo",
+        lastName:"Bro",
+        email:"neo.brov@gmail.com" 
+    }
 ];
-let pattern = /\b[^Aa\s]{6,}\b/g;
-let matchesReg = text.match(pattern);
+let trustedEmails = [];
+let emailPatern = /^[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)?@(gmail\.com|yahoo\.com)$/;
 
-for (let i = 0; i < arr.length; i++){
-    
-    console.log(arr[i])
+for (let i = 0; i < usersArr.length; i++) {
+    let usersMails = usersArr[i].email;
+    if (usersMails.match(emailPatern)) {
+        trustedEmails.push(usersMails);
+    }
 }
 
-// console.log(arr)
-
-// let valid = "example@example.com"
-
-// let invalid = "1example@.net"
-
-// let matchExpr = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-
-
-
-// for (let element of arr){
-//     let matchExpr = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-// }
+console.log(trustedEmails);
